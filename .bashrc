@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 #PS1='[\u@\h \W]\$ '
 
-PS1='\W -> \$ '
+PS1='\033[36;4;1m\W\033[0m -> \033[31;4;1m\$\033[0m '
 HISTFILESIZE=25
 alias ls='ls --color=auto'
 alias la='ls -A'
