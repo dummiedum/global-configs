@@ -2,6 +2,10 @@ HISTFILE=~/.histfile
 HISTSIZE=0
 SAVEHIST=0
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+PS1="%1d -> \$ "
+
 alias ls='ls --color=auto'
 alias la='ls -A'
 alias l='ls -lh'
