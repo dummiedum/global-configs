@@ -1,5 +1,5 @@
 HISTFILE=~/.histfile
-HISTSIZE=0
+HISTSIZE=5
 SAVEHIST=0
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
