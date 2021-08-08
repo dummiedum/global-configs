@@ -1,3 +1,4 @@
+colorscheme radicalgoodspeed
 set number
 set nowrap
 syntax on
