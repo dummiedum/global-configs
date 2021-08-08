@@ -1,3 +1,2 @@
-rm ~/global-configs/.vim/ -r
-cp ~/.zshrc ~/.bashrc ~/.vimrc ~/.vim/ ~/global-configs/ -r
-rm ~/global-configs/.vim/.netrwhist
+rm ~/global-configs/nvim/ -r
+cp ~/.zshrc ~/.bashrc ~/.config/nvim/ ~/global-configs/ -r

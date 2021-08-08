@@ -16,4 +16,5 @@ alias ins='sudo pacman -S'
 alias rem='sudo pacman -Rsn'
 alias update='sudo pacman -Syy'
 alias upgrade='sudo pacman -Syyu'
+alias vim='nvim'
 export PATH=$PATH:/home/baka/.local/bin/

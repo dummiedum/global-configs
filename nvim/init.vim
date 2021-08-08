@@ -10,7 +10,6 @@ set ignorecase
 set smartcase
 set mouse=a
 set nobackup
-colorscheme radicalgoodspeed
 set expandtab
 
 " Control+s to tab backwards

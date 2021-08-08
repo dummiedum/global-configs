@@ -1,5 +1,5 @@
 # Suggested Packages:
-- vim
+- neovim
 - shell (CHOOSE ONE):
     - bash
     - zsh
