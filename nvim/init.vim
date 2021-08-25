@@ -2,7 +2,7 @@ colorscheme radicalgoodspeed
 set number
 set nowrap
 syntax on
-filetype plugin on
+filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set autowrite
@@ -12,6 +12,7 @@ set smartcase
 set mouse=a
 set nobackup
 set expandtab
+set scrolloff=10
 
 " Control+s to tab backwards
 noremap <C-s> :<C-U>tabnext<CR>
