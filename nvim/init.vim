@@ -2,7 +2,7 @@ colorscheme radicalgoodspeed
 set number
 set nowrap
 syntax on
-filetype plugin indent on
+filetype plugin on
 set tabstop=4
 set shiftwidth=4
 set autowrite
