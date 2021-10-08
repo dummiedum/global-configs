@@ -9,7 +9,6 @@ set autowrite
 set autoindent
 set ignorecase
 set smartcase
-set mouse=a
 set nobackup
 set expandtab
 set scrolloff=10
