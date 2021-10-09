@@ -20,7 +20,7 @@ noremap <C-a> :<C-U>tabprevious<CR>
 inoremap <C-a> <C-\><C-N>:tabprevious<CR>
 cnoremap <C-a> <C-C>:tabprevious<CR>
 
-autocmd FileType c nnoremap <C-l> :!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
+autocmd FileType c nnoremap <C-l> :!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType cpp nnoremap <C-l> :!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType javascript nnoremap <C-l> :!node "%:p" <Enter>
 autocmd FileType python nnoremap <C-l> :!python "%:p" <Enter>
