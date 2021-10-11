@@ -27,5 +27,3 @@ alias update='sudo pacman -Syy'
 alias upgrade='sudo pacman -Syyu'
 alias deps='pacman -Qdtq'
 export PATH=$PATH:/home/baka/.local/bin/
-
-ls
