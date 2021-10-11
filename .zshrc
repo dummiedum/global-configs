@@ -4,8 +4,8 @@ SAVEHIST=0
 
 
 set -o vi
-
-zle reset-prompt
+RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+RPS2=$RPS1
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
     RPS2=$RPS1
