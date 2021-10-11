@@ -1,25 +1,16 @@
+# history
 HISTFILE=~/.histfile
 HISTSIZE=5
 SAVEHIST=0
 
-# vi mode
-set -o vi
-
-# vi mode indicator (ignore the bad code, i'll fix it later)
-RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-RPS2=$RPS1
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-    RPS2=$RPS1
-    zle reset-prompt
-}
-
+# prompt
 PS1="%1d -> \$ "
-zle -N zle-line-init
-zle -N zle-keymap-select
+
+# syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#aliases
+
+# aliases
 alias ls='ls --color=auto'
 alias la='ls -A'
 alias l='ls -lh'
@@ -32,5 +23,5 @@ alias update='sudo pacman -Syy'
 alias upgrade='sudo pacman -Syyu'
 alias deps='pacman -Qdtq'
 
-#path
+# path
 export PATH=$PATH:/home/baka/.local/bin/
