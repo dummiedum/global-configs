@@ -1,6 +1,4 @@
 # Suggested Packages:
 - vim
-- shell (CHOOSE ONE):
-    - bash
-    - zsh
-        - zsh-syntax-highlighting
+- zsh
+    - zsh-syntax-highlighting
