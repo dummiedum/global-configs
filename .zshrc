@@ -7,15 +7,11 @@ function zle-line-init zle-keymap-select {
     RPS2=$RPS1
     zle reset-prompt
 }
-zle -N zle-line-init
-zle -N zle-keymap-select
-
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
 PS1="%1d -> \$ "
 
+zle -N zle-line-init
+zle -N zle-keymap-select
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias ls='ls --color=auto'
 alias la='ls -A'
 alias l='ls -lh'
