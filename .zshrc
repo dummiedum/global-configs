@@ -19,12 +19,13 @@ alias upgrade='sudo pacman -Syyu'
 alias deps='pacman -Qdtq'
 export PATH=$PATH:/home/baka/.local/bin/
 
-set -o vi
 
-terminfo_down_sc=$terminfo[cud1]$terminfo[cuu1]$terminfo[sc]$terminfo[cud1]
+set -o vi
 function zle-line-init zle-keymap-select {
-    PS1_2="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-    PS1="%{$terminfo_down_sc$PS1_2$terminfo[rc]%}%~ %# "
+    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+    RPS2=$RPS1
     zle reset-prompt
 }
-preexec () { print -rn -- $terminfo[el]; }
+
+zle -N zle-line-init
+zle -N zle-keymap-select
