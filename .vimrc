@@ -1,5 +1,8 @@
 set number
 set nowrap
+
+colorscheme darkblue
+
 syntax on
 filetype plugin on
 set tabstop=4
