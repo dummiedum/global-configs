@@ -1,7 +1,7 @@
 set number
 set nowrap
 
-colorscheme darkblue
+colorscheme peachpuff
 
 syntax on
 filetype plugin on
