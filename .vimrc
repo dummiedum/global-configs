@@ -24,3 +24,4 @@ autocmd FileType c nnoremap <C-l> :!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType cpp nnoremap <C-l> :!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType javascript nnoremap <C-l> :!node "%:p" <Enter>
 autocmd FileType python nnoremap <C-l> :!python "%:p" <Enter>
+autocmd FileType rust nnoremap <C-l> :!cargo run <Enter>
