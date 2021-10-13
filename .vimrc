@@ -1,7 +1,7 @@
 set number
 set nowrap
 
-colorscheme peachpuff
+colorscheme torte
 
 syntax on
 filetype plugin on
