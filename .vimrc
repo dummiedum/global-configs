@@ -24,7 +24,12 @@ inoremap <C-a> <C-\><C-N>:tabprevious<CR>
 cnoremap <C-a> <C-C>:tabprevious<CR>
 
 autocmd FileType c nnoremap <C-l> :!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
+autocmd FileType c inoremap <C-l> <C-\><C-N>:!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType cpp nnoremap <C-l> :!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
+autocmd FileType cpp inoremap <C-l> <C-\><C-N>:!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType javascript nnoremap <C-l> :!node "%:p" <Enter>
+autocmd FileType javascript inoremap <C-l> <C-\><C-N>:!node "%:p" <Enter>
 autocmd FileType python nnoremap <C-l> :!python "%:p" <Enter>
+autocmd FileType python inoremap <C-l> <C-\><C-N>:!python "%:p" <Enter>
 autocmd FileType rust nnoremap <C-l> :!cargo run <Enter>
+autocmd FileType rust inoremap <C-l> <C-\><C-N>:!cargo run <Enter>
