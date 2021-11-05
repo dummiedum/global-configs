@@ -33,7 +33,7 @@ autocmd FileType python nnoremap <C-l> :!python "%:p" <Enter>
 autocmd FileType python inoremap <C-l> <C-\><C-N>:!python "%:p" <Enter>
 autocmd FileType rust nnoremap <C-l> :!cargo run <Enter>
 autocmd FileType rust inoremap <C-l> <C-\><C-N>:!cargo run <Enter>
-autocmd FileType sh nnoremap <C-l> :!./"%:p" <Enter>
-autocmd FileType sh inoremap <C-l> <C-\><C-N>:!./"%:p" <Enter>
-autocmd FileType bash nnoremap <C-l> :!./"%:p" <Enter>
-autocmd FileType bash inoremap <C-l> <C-\><C-N>:!./"%:p" <Enter>
+autocmd FileType sh nnoremap <C-l> :!"%:p" <Enter>
+autocmd FileType sh inoremap <C-l> <C-\><C-N>:!"%:p" <Enter>
+autocmd FileType bash nnoremap <C-l> :!"%:p" <Enter>
+autocmd FileType bash inoremap <C-l> <C-\><C-N>:!"%:p" <Enter>
