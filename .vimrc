@@ -14,6 +14,7 @@ set smartcase
 set nobackup
 set expandtab
 set scrolloff=10
+set relativenumber
 " Control+s to tab backwards
 noremap <C-s> :<C-U>tabnext<CR>
 inoremap <C-s> <C-\><C-N>:tabnext<CR>
