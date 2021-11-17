@@ -24,6 +24,10 @@ noremap <C-a> :<C-U>tabprevious<CR>
 inoremap <C-a> <C-\><C-N>:tabprevious<CR>
 cnoremap <C-a> <C-C>:tabprevious<CR>
 
+
+set completeopt=menuone
+
+
 autocmd FileType c nnoremap <C-l> :!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType c inoremap <C-l> <C-\><C-N>:!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
 autocmd FileType cpp nnoremap <C-l> :!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
@@ -38,3 +42,4 @@ autocmd FileType sh nnoremap <C-l> :!"%:p" <Enter>
 autocmd FileType sh inoremap <C-l> <C-\><C-N>:!"%:p" <Enter>
 autocmd FileType bash nnoremap <C-l> :!"%:p" <Enter>
 autocmd FileType bash inoremap <C-l> <C-\><C-N>:!"%:p" <Enter>
+
