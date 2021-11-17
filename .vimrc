@@ -27,19 +27,5 @@ cnoremap <C-a> <C-C>:tabprevious<CR>
 
 set completeopt=menuone
 
-
-autocmd FileType c nnoremap <C-l> :!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
-autocmd FileType c inoremap <C-l> <C-\><C-N>:!gcc "%:p" -o "%:p".out && "%:p".out <Enter>
-autocmd FileType cpp nnoremap <C-l> :!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
-autocmd FileType cpp inoremap <C-l> <C-\><C-N>:!g++ "%:p" -o "%:p".out && "%:p".out <Enter>
-autocmd FileType javascript nnoremap <C-l> :!node "%:p" <Enter>
-autocmd FileType javascript inoremap <C-l> <C-\><C-N>:!node "%:p" <Enter>
-autocmd FileType python nnoremap <C-l> :!python "%:p" <Enter>
-autocmd FileType python inoremap <C-l> <C-\><C-N>:!python "%:p" <Enter>
-autocmd FileType rust nnoremap <C-l> :!cargo run <Enter>
-autocmd FileType rust inoremap <C-l> <C-\><C-N>:!cargo run <Enter>
-autocmd FileType sh nnoremap <C-l> :!"%:p" <Enter>
-autocmd FileType sh inoremap <C-l> <C-\><C-N>:!"%:p" <Enter>
-autocmd FileType bash nnoremap <C-l> :!"%:p" <Enter>
-autocmd FileType bash inoremap <C-l> <C-\><C-N>:!"%:p" <Enter>
-
+nnoremap <C-l> :!"%:p".vimrun<Enter>
+inoremap <C-l> <C-\><C-N>:!"%:p".vimrun<Enter>
