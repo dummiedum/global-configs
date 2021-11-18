@@ -27,5 +27,5 @@ cnoremap <C-a> <C-C>:tabprevious<CR>
 
 set completeopt=menuone
 
-nnoremap <C-l> :w<Enter> :<Up><Enter>
-inoremap <C-l> <C-\><C-N> :w<Enter> :<Up><Enter>
+nnoremap <C-l> :<Up><Enter>
+inoremap <C-l> <C-\><C-N> :<Up><Enter>
