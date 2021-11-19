@@ -22,6 +22,7 @@ alias rem='sudo pacman -R'
 alias update='sudo pacman -Syy'
 alias upgrade='sudo pacman -Syyu'
 alias deps='pacman -Qdtq'
+alias malw='mal cfg list-widthha $(tput cols)'
 alias malp='mal -r -a --status planning'
 
 # path
