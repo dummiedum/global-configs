@@ -1,4 +1,1 @@
-# Suggested Packages:
-- vim
-- zsh
-    - zsh-syntax-highlighting
+# Moved to [Gitlab](https://gitlab.com/firethedancannon/global-configs)
